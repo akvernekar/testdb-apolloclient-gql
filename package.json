@@ -1,0 +1,24 @@
+{
+  "name": "test-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "concurrently \"nodemon index.js\" \"cd client && npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "graphql-tools": "^4.0.6",
+    "pg": "^7.16.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.3"
+  }
+}
