@@ -59,8 +59,11 @@ componentDidMount=()=>{
                   return (
                       <tr>
                 <td>{company.id}</td>
+
                 <td>{company.companyName}</td>
-                  <td>{this.props.data.getAllCompanies.find(item=>company.tenantId==item.id)!==undefined?this.props.data.getAllCompanies.find(item=>company.tenantId==item.id).companyName:""}</td>
+
+                <td>{this.props.data.getAllCompanies.find(item=>company.tenantId==item.id)!==undefined ?this.props.data.getAllCompanies.find(item=>company.tenantId==item.id).companyName:""}</td>
+
                {usr.role=="superAdmin" && <td><button>Edit</button> <button onClick={()=>{this.removeCompany(company.id)}}>remove</button></td>}
                       </tr>
                   )  

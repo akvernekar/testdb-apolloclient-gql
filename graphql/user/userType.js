@@ -19,5 +19,4 @@ var userArgs={
 };
 
 
-module.exports ={userArgs,userType}
-
+module.exports ={userArgs,userType};

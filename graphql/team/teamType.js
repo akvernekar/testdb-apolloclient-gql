@@ -15,4 +15,4 @@ var teamArgs={
 }
 
 
-module.exports = {teamType,teamArgs}
+module.exports = {teamType,teamArgs};

@@ -96,7 +96,7 @@ removeUser1(id)
 
                             <td>{this.state.getAllCompanies.length && this.state.getAllCompanies.find(item=>item.id==user.tenantId)!==undefined && this.state.getAllCompanies.find(item=>item.id==user.tenantId).companyName}</td>
                             <td>{user.role}</td>
-                            {(usr.role=="superAdmin" ||(usr.role=='admin' &&usr.companyId==user.companyId)  || usr.id==user.id )&& <td><Link to={`/user/edit/${user.id}`}><button>Edit</button></Link>{(usr.role=="superAdmin" ||usr.role=="admin" )&& <button onClick={()=>{this.remove(user.id)}}>Remove</button>}</td>}
+                            {(usr.role=="superAdmin" ||(usr.role=='admin' &&usr.companyId==user.companyId &&usr.role=='superAdmin' )  || usr.id==user.id )&& <td><Link to={`/user/edit/${user.id}`}><button>Edit</button></Link>{(usr.role=="superAdmin" ||usr.role=="admin" )&& <button onClick={()=>{this.remove(user.id)}}>Remove</button>}</td>}
                                 </tr>
                             )
                         })}

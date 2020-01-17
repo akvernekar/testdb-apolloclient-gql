@@ -14,9 +14,9 @@ var companyType=new GraphQLObjectType({
 var companyArgs={
     id:{type:GraphQLInt},
     companyName:{type:GraphQLString},
-    tenantId:{type:GraphQLInt}
+    tenantId:{type:GraphQLInt},
 }
 
-module.exports={companyType ,companyArgs}
+module.exports={companyType ,companyArgs};
 
 

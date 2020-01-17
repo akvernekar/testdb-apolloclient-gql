@@ -57,7 +57,7 @@ componentDidMount= async ()=>{
                         <td>{department.id}</td>
                             <td>{department.departmentName}</td>
                         {/* <td>{this.state.companyData.find(item=>item.id==department.companyId)!=undefined?this.state.companyData.find(item=>item.id==department.companyId).companyName:""}</td> */}
-                            <td>{this.state.getAllCompanies.length && this.state.getAllCompanies.find(item=>item.id==department.companyId).companyName}</td>
+                            <td>{ this.state.getAllCompanies.find(item=>item.id==department.companyId)!=undefined ?this.state.getAllCompanies.find(item=>item.id==department.companyId).companyName:""}</td>
                             <td>{this.state.getAllCompanies.length && this.state.getAllCompanies.find(item=>item.id==department.tenantId).companyName}</td>
                             {(usr.role=="superAdmin" || usr.role=="admin" && (usr.companyId==department.companyId)) && <td><button>Edit</button> <button>Remove</button></td>}
                                 </tr>

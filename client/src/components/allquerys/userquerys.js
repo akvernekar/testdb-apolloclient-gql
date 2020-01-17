@@ -66,6 +66,7 @@ const getSingleUser=gql`
             companyId
             departmentId
             teamId
+            password
             id
         }
     }

@@ -21,4 +21,4 @@ var departmentArgs={
 }
 
 
-module.exports ={departmentType ,departmentArgs}
+module.exports ={departmentType ,departmentArgs};
